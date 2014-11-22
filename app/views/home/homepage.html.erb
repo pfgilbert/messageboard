@@ -1,9 +1,5 @@
 Welcome to MessageBoard!
 <br>
 <% if user_signed_in? %>
-  Hey, <%= current_user.email %> click below if you want to sign out
-  <%= link_to("Sign Out", :destroy_user_session, method: :delete) %>
-<% else %>
-  <a href="/users/sign_up">Sign up</a>
-  <a href="/users/sign_in">Sign in</a>
+  Hey, <%= current_user.email %> click above to sign out
 <% end %>
